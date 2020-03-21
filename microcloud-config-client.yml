@@ -15,7 +15,7 @@ eureka:
  client:
   serviceUrl:
     defaultZone: http://admin:enjoy@localhost:7001/eureka
-  register-with-eureka: false
+  register-with-eureka: true
 
 info:
   app.name: microcloud-config-client-dev2
