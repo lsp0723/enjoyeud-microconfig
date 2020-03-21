@@ -1,28 +1,3 @@
-Skip to content
-Why GitHub? 
-Enterprise
-Explore 
-Marketplace
-Pricing 
-Search
-
-Sign in
-Sign up
-Learn Git and GitHub without any code!
-Using the Hello World guide, you’ll start a branch, write comments, and open a pull request.
-
-
-enjoyeud
-/
-microconfig
-1
-311
- Code Issues 0 Pull requests 0 Actions Projects 0 Wiki Security Insights
-microconfig/microcloud-config-client.yml
- enjoyedu update
-d0ea7f4 on 26 Mar 2019
-40 lines (34 sloc)  639 Bytes
-  
 spring:
    profiles:
       active:
@@ -63,15 +38,3 @@ eureka:
 info:
   app.name: microcloud-config-client-beta2
   company.name: enjoy
-© 2020 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Help
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
