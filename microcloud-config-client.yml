@@ -1,48 +1,77 @@
+Skip to content
+Why GitHub? 
+Enterprise
+Explore 
+Marketplace
+Pricing 
+Search
+
+Sign in
+Sign up
+Learn Git and GitHub without any code!
+Using the Hello World guide, you’ll start a branch, write comments, and open a pull request.
+
+
+enjoyeud
+/
+microconfig
+1
+311
+ Code Issues 0 Pull requests 0 Actions Projects 0 Wiki Security Insights
+microconfig/microcloud-config-client.yml
+ enjoyedu update
+d0ea7f4 on 26 Mar 2019
+40 lines (34 sloc)  639 Bytes
+  
 spring:
-  profiles:
-    active:
-      - dev
+   profiles:
+      active:
+        - dev
 ---
 server:
- port: 7001
-eureka:
-  server:
-    eviction-interval-timer-in-ms: 1000   #设置清理的间隔时间，而后这个时间使用的是毫秒单位（默认是60秒）
-    enable-self-preservation: false #设置为false表示关闭保护模式
-  client:
-    fetch-registry: false
-    register-with-eureka: true
-    service-url:
-        defaultZone: http://admin:enjoy@localhost:7001/eureka
-  instance: # eureak实例定义
-    hostname: localhost # 定义 Eureka 实例所在的主机名称
+  port: 8201
+
 spring:
   profiles: dev
-  security:
-    user:
-      name: admin
-      password: enjoy
   application:
-    name: microcloud-config-eureka-client
+      name: microconfig-test-client5
+
+eureka:
+ client:
+  serviceUrl:
+    defaultZone: http://admin:enjoy@localhost:7301/eureka
+  register-with-eureka: false
+
+info:
+  app.name: microcloud-config-client-dev2
+  company.name: enjoy2
 ---
 server:
- port: 7002
-eureka:
-  server:
-    eviction-interval-timer-in-ms: 1000   #设置清理的间隔时间，而后这个时间使用的是毫秒单位（默认是60秒）
-    enable-self-preservation: false #设置为false表示关闭保护模式
-  client:
-    fetch-registry: false
-    register-with-eureka: true
-    service-url:
-        defaultZone: http://admin:enjoy@localhost:7002/eureka
-  instance: # eureak实例定义
-    hostname: localhost # 定义 Eureka 实例所在的主机名称
+  port: 8102
+
 spring:
   profiles: beta
-  security:
-    user:
-      name: admin
-      password: enjoy
   application:
-    name: microcloud-config-eureka-client
+      name: microconfig-test-client5
+
+eureka:
+ client:
+  serviceUrl:
+    defaultZone: http://admin:enjoy@localhost:7301/eureka
+  register-with-eureka: false
+  
+info:
+  app.name: microcloud-config-client-beta2
+  company.name: enjoy
+© 2020 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
